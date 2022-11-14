@@ -23,9 +23,9 @@ def createDeck():
 
 
 
-#Note the addition of a type in the argument list below. It is not
-#used by the interpreter, but is good documentation and can be used by
-#source analysis tools.
+# Note the addition of a type in the argument list below. It is not
+# used by the interpreter, but is good documentation and can be used
+# by source analysis tools.
 
 def shuffle(deck:list):
     """ Creates and returns a shuffled equivalent of the given deck 
@@ -52,3 +52,8 @@ def deal(deck:list, handSize:int):
     while len(hand)<handSize:
         hand.append(deck.pop(0))
     return hand
+
+
+# Challenge: Create a new function called "flip" that returns the top
+# card from a deck. The deck should be modified by this action. Make
+# sure to document your function!
